@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# Using mern-infrastructureto Create MERN-Stack Projects in the Future
+# Using mern-infrastructure to Create MERN-Stack Projects in the Future
 
     - Here's the process to create a new MERN-Stack project that starts with the infrastructure code:
         1. Clone the mern-infrastructure repo: git clone <url of mern-infrastructure> <name-of-project>
