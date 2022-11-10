@@ -17,11 +17,14 @@ const NBAGames = () => {
     return (
         <div>
             <h1>NBA Games</h1>
-            {games && games.events.map(event => (
+            {games && games.events.map(event=> (
                 <div>
-                    <h3>{event.name}</h3>
+                    <h2>{event.name}</h2>
+                    <h4>{event.status.type.detail}</h4>
+                    <h4>{event.season.slug}</h4>
                 </div>
             ))}
+
         </div>
     )
     
