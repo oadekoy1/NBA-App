@@ -1,28 +1,25 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import { getUser } from "./utils/users-service";
-import AuthPage from "./pages/AuthPage";
-import NewOrderPage from "./pages/NewOrderPage";
-import OrderHistoryPage from "./pages/OrderHistoryPage";
-import NavBar from "./components/NavBar";
-import "./App.css";
+import{ Route, Routes } from 'react-router-dom'
+import PlayerStats from './pages/PlayerStats';
+import NBAGames from './pages/NBAGames';
+import TeamStandings from './pages/TeamStandings';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import './App.css';
 
-function App() {
-  const [user, setUser] = useState(getUser());
+const App = () => {
   return (
-    <main className="App">
-      {user ? (
-        <>
-          <NavBar user={user} setUser={setUser}/>
-          <Routes>
-            <Route path="/orders/new" element={<NewOrderPage />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
-          </Routes>
-        </>
-      ) : (
-        <AuthPage setUser={setUser}/>
-      )}
-    </main>
+    <div className="App">
+    
+      <Nav />
+
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/standings' element={<TeamStandings/>} />
+        <Route path='/stats' element={<PlayerStats/>} />
+        <Route path='/games' element={<NBAGames/>} />
+      </Routes>
+
+    </div>
   );
 }
 
