@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 const Home = () => {
     const url = `http://site.api.espn.com/apis/site/v2/sports/basketball/nba/news`
@@ -19,12 +19,21 @@ const Home = () => {
             <h1>NBA Today</h1>
             {news && news.articles.map(article => (
                 <div>
-                    <h3>{article.headline}</h3>
+                    <h3>{article.description}</h3>
+
+                    <div>
+                        <img
+                            src={article.images[0].url}
+                        />
+                    </div>
                 </div>
+
             ))}
+
+            
         </div>
     )
-    
+
 }
 
 export default Home
