@@ -1,6 +1,6 @@
 const express = require('express')
 const morgan = require('morgan')
-// const favicon = require('serve-favicon')
+const favicon = require('serve-favicon')
 const path = require('path')
 require('dotenv').config()
 require('./config/db')
