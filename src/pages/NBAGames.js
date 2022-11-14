@@ -23,8 +23,9 @@ const NBAGames = () => {
                     <h4>{event.status.type.detail}</h4>
                     {/* <h4>{event.competitions[0].status.displayClock}</h4> */}
                     {/* <h4>{event.competitions.map(c => c.competitors.map(competitors => <h4>{competitors.score}</h4>))}</h4> */}
-                    <h4> {event.competitions[0].competitors[1].score} - {event.competitions[0].competitors[0].score}</h4>
-                    <h4>{event.competitions[0].competitors[1].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[1].leaders[3].leaders[0].displayValue} : {event.competitions[0].competitors[0].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[1].leaders[3].leaders[0].displayValue}</h4>
+                    <h4>{event.competitions[0].competitors[1].score} - {event.competitions[0].competitors[0].score}</h4>
+                    {/* <h4>{event.competitions[0].situation.lastPlay.text}</h4> */}
+                    <h4>{event.competitions[0].competitors[1].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[1].leaders[3].leaders[0].displayValue} : {event.competitions[0].competitors[0].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[0].leaders[3].leaders[0].displayValue}</h4>
                 </div>
             ))}
 

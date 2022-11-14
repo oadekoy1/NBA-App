@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {signUp} from '../../utils/users-service';
+import {signUp} from '../utils/users-service';
 
 //? src/components/SignUpForm/SignUpForm.jsx <--> users-service.js <--> users-api.js <-Internet-> server.js (Express)
 
@@ -29,6 +29,7 @@ export default class SignUpForm extends Component {
       this.props.setUser(user);
       
     } catch (error) {
+      console.log(error);
       this.setState({ error: "Sign Up Failed - Try Again!" });
     }
   };

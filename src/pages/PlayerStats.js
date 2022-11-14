@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 const PlayerStats = () => {
-  const url = `https://www.balldontlie.io/api/v1/stats`
+  const url = `http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2023/types/2/leaders?lang=en%C2%AEion=us`
 
     const [stats, setStats] = useState(null)
 
@@ -18,9 +18,11 @@ const PlayerStats = () => {
     return (
         <div>
             <h1>NBA Player Stats</h1>
-            {stats && stats.data.map(data=> (
+            {stats && stats.categories.map(categories => (
                 <div>
-                    <h3>{data.player.first_name}</h3>
+                    <h3>{categories.displayName}</h3>
+                    <h4>{categories.leaders[0].displayValue}</h4>
+                    <h4>{categories.leaders[1].displayValue}</h4>
                 </div>
             ))}
         </div>

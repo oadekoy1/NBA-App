@@ -1,24 +1,26 @@
 import { Link } from 'react-router-dom'
-const Nav = () => {
+import * as userService from '../utils/users-service'
+
+const Nav = ({user, setUser}) => {
+
+const handleLogOut = () => {
+    userService.logOut()
+    setUser(null)
+}
     return (
 
         <div className='Nav'>
 
-            <Link to='/'>
-                <div>NBA Home</div>
-            </Link>
+            <Link to='/'>NBA Home</Link>  &nbsp; | &nbsp;
 
-            <Link to='/standings'>
-                <div>NBA Standings</div>
-            </Link>
+            <Link to='/standings'>NBA Standings</Link>  &nbsp; | &nbsp;
 
-            <Link to='/games'>
-                <div>NBA Games</div>
-            </Link>
+            <Link to='/games'>NBA Games</Link>  &nbsp; | &nbsp;
 
-            <Link to='/stats'>
-                <div>Player Stats</div>
-            </Link>
+            <Link to='/stats'>Player Stats</Link> {" "}
+            <span>Welcome, {user.name}</span>
+
+            &nbsp;&nbsp; <Link to='' onClick={handleLogOut}>Log Out</Link>
             
         </div>
 
