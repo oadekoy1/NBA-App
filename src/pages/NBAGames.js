@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 const NBAGames = () => {
-    const url = `http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard`
+    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard`
     const [games, setGames] = useState(null)
 
     const fetchGames = async () => {

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 const PlayerStats = () => {
-  const url = `http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2023/types/2/leaders?lang=en%C2%AEion=us`
+  const url = `https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2023/types/2/leaders?lang=en%C2%AEion=us`
 
     const [stats, setStats] = useState(null)
 
