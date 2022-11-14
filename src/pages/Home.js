@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 const Home = () => {
-    const url = `http://site.api.espn.com/apis/site/v2/sports/basketball/nba/news`
+    const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news`
     const [news, setNews] = useState(null)
 
     const fetchNews = async () => {
