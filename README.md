@@ -3,7 +3,7 @@ NBA Website README
 LINK TO THE WEBSITE:
 https://nba.herokuapp.com/
 
-![Alt text](../../../../../../../C:/Users/Learner/Desktop/cohort27/Module3/NBA-App/Screenshot%202022-11-15%20101827.png)
+![Alt img](../../../../../../../C:/Users/Learner/Desktop/cohort27/Module3/NBA-App/Screenshot%202022-11-15%20101827.png)
 
 Description:
 I created a basic clone of the NBA APP that is used overall to enjoy basketball at the highest level. You can see updated news of what is going on the the NBA community. You can switch between pages to see the standings of your favorite teams. You can see live score (you will have to refresh the page) of all the NBA games going on live. You will be able to see top 10 players in each stat category (names are absent).
