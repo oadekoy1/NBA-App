@@ -17,6 +17,7 @@ const NBAGames = () => {
     return (
         <div>
             <h1>NBA Games</h1>
+            <br/>
             {games && games.events.map(event=> (
                 <div>
                     <h2 key={event.id}>{event.name}</h2>
@@ -26,6 +27,8 @@ const NBAGames = () => {
                     <h4>{event.competitions[0].competitors[1].score} - {event.competitions[0].competitors[0].score}</h4>
                     {/* <h4>{event.competitions[0].situation.lastPlay.text}</h4> */}
                     <h4>{event.competitions[0].competitors[1].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[1].leaders[3].leaders[0].displayValue} : {event.competitions[0].competitors[0].leaders[0].leaders[0].athlete.fullName} - {event.competitions[0].competitors[0].leaders[3].leaders[0].displayValue}</h4>
+                    <br/>
+                    <br/>
                 </div>
             ))}
 

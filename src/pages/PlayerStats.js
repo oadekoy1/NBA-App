@@ -23,6 +23,14 @@ const PlayerStats = () => {
                     <h3>{categories.displayName}</h3>
                     <h4>{categories.leaders[0].displayValue}</h4>
                     <h4>{categories.leaders[1].displayValue}</h4>
+                    <h4>{categories.leaders[2].displayValue}</h4>
+                    <h4>{categories.leaders[3].displayValue}</h4>
+                    <h4>{categories.leaders[4].displayValue}</h4>
+                    <h4>{categories.leaders[5].displayValue}</h4>
+                    <h4>{categories.leaders[6].displayValue}</h4>
+                    <h4>{categories.leaders[7].displayValue}</h4>
+                    <h4>{categories.leaders[8].displayValue}</h4>
+                    <h4>{categories.leaders[9].displayValue}</h4>
                 </div>
             ))}
         </div>

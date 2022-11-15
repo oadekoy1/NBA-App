@@ -65,6 +65,8 @@ code {
   overflow-y: scroll;
 }
 
+
+
 .section-heading {
   display: flex;
   justify-content: space-around;

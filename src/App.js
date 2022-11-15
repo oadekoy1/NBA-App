@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NBAGames from './pages/NBAGames';
 import TeamStandings from './pages/TeamStandings';
 import PlayerStats from './pages/PlayerStats';
-import Nav from './components/Nav';
+import Navs from './components/Navs';
 import { getUser } from './utils/users-service';
 import './App.css';
 
@@ -16,7 +16,7 @@ const App = () => {
     {
       user ?
       <> 
-      <Nav user={user}/>
+      <Navs  user={user}/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/standings' element={<TeamStandings/>} />
