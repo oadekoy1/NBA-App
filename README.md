@@ -1,86 +1,30 @@
-# Getting Started with Create React App
+NBA Website README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LINK TO THE WEBSITE:
+https://nba.herokuapp.com/
 
-## Available Scripts
+![Alt text](../../../../../../../C:/Users/Learner/Desktop/cohort27/Module3/NBA-App/Screenshot%202022-11-15%20101827.png)
 
-In the project directory, you can run:
+Description:
+I created a basic clone of the NBA APP that is used overall to enjoy basketball at the highest level. You can see updated news of what is going on the the NBA community. You can switch between pages to see the standings of your favorite teams. You can see live score (you will have to refresh the page) of all the NBA games going on live. You will be able to see top 10 players in each stat category (names are absent).
 
-### `npm start`
+Tech Stack: 
+-React.js
+-Express.js
+-Node.js
+-JavaScript
+-CSS
+-HTML
+-BootStrap
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Upcoming Features:
+-Add more details to the standings (division standings, win/loss steak, last 10 wins)
+-Add videos of NBA highlights
+-Render players names on the Player Stats page
+-Organize better the NavBar and the list for the standings
+-Automatic live score update(Not having to refresh the page after every second to see score)
+-Add Player profile of all active NBA Players
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# Using mern-infrastructure to Create MERN-Stack Projects in the Future
-
-    - Here's the process to create a new MERN-Stack project that starts with the infrastructure code:
-        1. Clone the mern-infrastructure repo: git clone <url of mern-infrastructure> <name-of-project>
-            - Note that the folder created will be same as <name-of-project>instead of mern-infrastructure
-        2. cd <name-of-project>
-        3. Install the Node modules: npm i
-        4. Create a .env (touch .env) and add entries for DATABASE_URLand SECRET
-        5. Update the "name": "mern-infrastructure"in package.json to the name of your project.
-        6. Create a new repo on your personal GH account.
-        7. Copy the new GH repo's URL.
-        8. Update the remote's URL: git remote set-url origin <paste the copied GH url>
-        9. Push for the first time: git push -u origin main
-    Have fun coding your new project and don't forget to make frequent commits!# NBA-App
+Known Issues:
+-App doesn't log out user when click button (have to refresh page to be logged out)
+-Player's names are not rendering in the Player Stats page.
